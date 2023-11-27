@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="img/Logo-fav-icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(252, 240, 232);
+      }
+      #navbar-1 {
+        background-color: rgb(248, 217, 187);
+        background-image: url(img/bg-nav.jpg);
+        color: rgb(71, 71, 71);
+        background-size: cover;
+      }
+      #navbar-logo {
+        width: 300px;
+      }
+      #shopnow-ddown {
+        background-color: rgb(248, 217, 187);
+      }
+      .bnow-cart-button {
+        background-color: rgb(255, 94, 0);
+        border-color: rgb(179, 179, 179);
+      }
+
+      .bnow-cart-button:hover {
+        background-color: rgb(97, 97, 97);
+      }
+      .bnow-cart-button:active {
+        background-color: brown;
+      }
+      .item-home-img {
+        width: 250px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        background-position: center;
+      }
+      .item-home-img:hover {
+        width: 270px;
+      }
+      #footer-container {
+        background-color: rgb(53, 53, 53);
+        color: white;
+      }
+      .footer_link {
+        text-decoration: none;
+      }
+      .footer_sm_logo {
+        width: 40px;
+      }
+      #left-panel {
+        border-right: 1px solid;
+        border-color: black;
+      }
+      #shop-top-row {
+        border: 1px solid;
+        border-radius: 25px;
+        border-color: rgb(172, 172, 172);
+      }
+      .bot-page-link {
+        color: rgb(255, 94, 0);
+        text-decoration: none;
+      }
+    </style>
+    <title>DanTechzone - Shop - Processor</title>
+  </head>
+  <body>
+    <!-- Nav -->
+
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar-1">
+      <div class="container-fluid my-3">
+        <a class="nav-brand" href="index.html"
+          ><img
+            src="img/dantech4-logo.png"
+            class="img-fluid"
+            alt="website logo"
+            id="navbar-logo"
+        /></a>
+        <button
+          class="navbar-toggler px-0"
+          data-bs-toggle="collapse"
+          data-bs-target="#site-navbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="site-navbar">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active fs-5 ms-auto me-auto text-dark"
+                href="index.html"
+                style="color: rgb(71, 71, 71)"
+              >
+                <strong>Home</strong>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link fs-5 ms-auto me-auto text-dark"
+                href="index.html#deals-home"
+              >
+                <strong>Deals</strong>
+              </a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link fs-5 dropdown-toggle ms-auto me-auto text-dark"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                <strong>Shop</strong>
+              </a>
+              <ul class="dropdown-menu" id="shopnow-ddown">
+                <li>
+                  <a class="dropdown-item" href="shop-processor.html"
+                    >Processor</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Motherboard</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Graphics Card</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Storage</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Memory</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Power Supply</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">PC Case</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Show All</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link fs-5 ms-auto me-auto text-dark"
+                href="index.html#about-us-section"
+              >
+                <strong>About Us</strong>
+              </a>
+            </li>
+
+            <div class="d-sm-none">
+              <li class="nav-item d-sm-none">
+                <a
+                  class="nav-link fs-5 ms-auto me-auto text-dark"
+                  href="#"
+                  style="text-decoration: none"
+                  ><strong>Search</strong></a
+                >
+              </li>
+              <li class="nav-item d-sm-none">
+                <a
+                  class="nav-link fs-5 ms-auto me-auto text-dark"
+                  href="login-page.html"
+                  ><strong> Log In </strong></a
+                >
+              </li>
+              <li class="nav-item d-sm-none">
+                <a
+                  class="nav-link fs-5 ms-auto me-auto text-dark"
+                  href="cart-page.html"
+                  ><strong> My Cart </strong></a
+                >
+              </li>
+            </div>
+          </ul>
+          <div>
+            <form class="d-flex d-none d-sm-block">
+              <div>
+                <div class="input-group">
+                  <input type="search" class="form-control" id="search-bar" />
+                  <span class="input-group-text"
+                    ><a href="#" style="color: rgb(247, 114, 6)"
+                      ><span class="material-symbols-outlined align-middle">
+                        search
+                      </span></a
+                    ></span
+                  >
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="d-none d-sm-block">
+            <a
+              href="cart-page.html"
+              class="text-center"
+              style="color: rgb(216, 216, 216)"
+              ><span class="material-symbols-outlined me-3 ms-5">
+                shopping_cart
+              </span></a
+            >
+          </div>
+
+          <div class="d-none d-sm-block">
+            <a
+              href="login-page.html"
+              class="text-center"
+              style="color: rgb(216, 216, 216)"
+              ><span class="material-symbols-outlined me-3"> person </span></a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Content -->
+
+    <div class="container">
+      <div class="container mt-5 mb-5" id="shop-top-row">
+        <div class="row mt-3">
+          <div class="col-lg-3">
+            <div class="d-flex">
+              <button
+                type="button"
+                class="btn text-dark"
+                data-bs-toggle="dropdown"
+              >
+                ≡ Product Categories
+              </button>
+              <ul class="dropdown-menu" id="pcategories-ddown">
+                <li>
+                  <a class="dropdown-item" href="#">Processor</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Motherboard</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Graphics Card</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Storage</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Memory</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Power Supply</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">PC Case</a>
+                </li>
+                <li></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-9">
+            <div class="d-flex col-lg-3">
+              <label for="sort-by"></label>
+              <select class="form-select" name="sort-by" id="sort-by">
+                <option disabled selected>Sort by...</option>
+                <option value="option1">Sort by Relevance</option>
+                <option value="option2">Sort by Popularity</option>
+                <option value="option3">Sort by Rating</option>
+                <option value="option4">Sort by Price: Low to High</option>
+                <option value="option5">Sort by Price: High to Low</option>
+              </select>
+            </div>
+          </div>
+          <!-- <div class="col-lg-3" id="left-panel"></div>
+        <div class="col-lg-9"></div> -->
+        </div>
+        <hr />
+
+        <div class="row mt-4">
+          <div class="col-lg-3"></div>
+          <div class="col-lg-9"></div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="card h-100">
+                <a href="#">
+                  <img
+                    src="img/TopSeller/i5-11400.jpg"
+                    class="card-img-top img-fluid item-home-img"
+                    alt="intel 5 box"
+                  />
+                </a>
+                <div class="card-body text-center">
+                  <div class="mb-3 fs-4">
+                    <strong>Intel i5-11400</strong>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="row text-center">
+                    <div class="col-8">
+                      <p><strong>₱8,499.00</strong></p>
+                      <p style="color: gray; text-decoration: line-through">
+                        ₱10,999.00
+                      </p>
+                    </div>
+                    <div class="col-4 mx-0 px-0">⭐4.8</div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="row">
+                    <div class="col-9">
+                      <a
+                        href="#"
+                        class="btn btn-primary bnow-cart-button d-flex justify-content-center"
+                        >Buy Now</a
+                      >
+                    </div>
+                    <div class="col-3 px-1">
+                      <a
+                        href="#"
+                        class="btn btn-primary bnow-cart-button d-flex justify-content-center"
+                        ><span class="material-symbols-outlined">
+                          add_shopping_cart
+                        </span></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ITEM 2 -->
+            <div class="col-lg-3">
+              <div class="card h-100">
+                <a href="#">
+                  <img
+                    src="img/Processor/i5-12400.webp"
+                    class="card-img-top img-fluid item-home-img"
+                    alt="intel 5 12th Gen box"
+                  />
+                </a>
+                <div class="card-body text-center">
+                  <div class="mb-3 fs-4">
+                    <strong>Intel i5-12400</strong>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="row text-center">
+                    <div class="col-8">
+                      <p><strong>₱10,099.00</strong></p>
+                      <p style="color: gray; text-decoration: line-through">
+                        ₱11,999.00
+                      </p>
+                    </div>
+                    <div class="col-4 mx-0 px-0">⭐4.8</div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="row">
+                    <div class="col-9">
+                      <a
+                        href="#"
+                        class="btn btn-primary bnow-cart-button d-flex justify-content-center"
+                        >Buy Now</a
+                      >
+                    </div>
+                    <div class="col-3 px-1">
+                      <a
+                        href="#"
+                        class="btn btn-primary bnow-cart-button d-flex justify-content-center"
+                        ><span class="material-symbols-outlined">
+                          add_shopping_cart
+                        </span></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ITEM 3 -->
+            <div class="col-lg-3">
+              <div class="card h-100">
+                <a href="#">
+                  <img
+                    src="img/Processor/i5-12600k.jpg"
+                    class="card-img-top img-fluid item-home-img"
+                    alt="intel 5 box"
+                  />
+                </a>
+                <div class="card-body text-center">
+                  <div class="mb-3 fs-4">
+                    <strong>Intel i5-12600K</strong>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="row text-center">
+                    <div class="col-8">
+                      <p><strong>₱13,990.00</strong></p>
+                      <p style="color: gray; text-decoration: line-through">
+                        ₱15,000.00
+                      </p>
+                    </div>
+                    <div class="col-4 mx-0 px-0">⭐4.8</div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="row">
+                    <div class="col-9">
+                      <a
+                        href="#"
+                        class="btn btn-primary bnow-cart-button d-flex justify-content-center"
+                        >Buy Now</a
+                      >
+                    </div>
+                    <div class="col-3 px-1">
+                      <a
+                        href="#"
+                        class="btn btn-primary bnow-cart-button d-flex justify-content-center"
+                        ><span class="material-symbols-outlined">
+                          add_shopping_cart
+                        </span></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ITEM 4 -->
+            <div class="col-lg-3">
+              <div class="card h-100">
+                <a href="#">
+                  <img
+                    src="img/Processor/r5-5600.webp"
+                    class="card-img-top img-fluid item-home-img"
+                    alt="Ryzen 5 5600 box"
+                  />
+                </a>
+                <div class="card-body text-center">
+                  <div class="mb-3 fs-4">
+                    <strong>Ryzen 5 5600</strong>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="row text-center">
+                    <div class="col-8">
+                      <p><strong>₱7,800.00</strong></p>
+                      <p style="color: gray; text-decoration: line-through">
+                        ₱8,499.00
+                      </p>
+                    </div>
+                    <div class="col-4 mx-0 px-0">⭐4.8</div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="row">
+                    <div class="col-9">
+                      <a
+                        href="#"
+                        class="btn btn-primary bnow-cart-button d-flex justify-content-center"
+                        >Buy Now</a
+                      >
+                    </div>
+                    <div class="col-3 px-1">
+                      <a
+                        href="#"
+                        class="btn btn-primary bnow-cart-button d-flex justify-content-center"
+                        ><span class="material-symbols-outlined">
+                          add_shopping_cart
+                        </span></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <br />
+
+          <!-- 2nd row -->
+
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="card h-100">
+                <a href="#">
+                  <img
+                    src="img/Processor/r7-7000.webp"
+                    class="card-img-top img-fluid item-home-img"
+                    alt="ryzen 7 7800x3d box"
+                  />
+                </a>
+                <div class="card-body text-center">
+                  <div class="mb-3 fs-4">
+                    <strong>Ryzen 7 7800X3D</strong>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="row text-center">
+                    <div class="col-8">
+                      <p><strong>₱23,990.00</strong></p>
+                    </div>
+                    <div class="col-4 mx-0 px-0">⭐5.0</div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="row">
+                    <div class="col-9">
+                      <a
+                        href="#"
+                        class="btn btn-primary bnow-cart-button d-flex justify-content-center"
+                        >Buy Now</a
+                      >
+                    </div>
+                    <div class="col-3 px-1">
+                      <a
+                        href="#"
+                        class="btn btn-primary bnow-cart-button d-flex justify-content-center"
+                        ><span class="material-symbols-outlined">
+                          add_shopping_cart
+                        </span></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ITEM 2 -->
+            <div class="col-lg-3">
+              <div class="card h-100">
+                <a href="#">
+                  <img
+                    src="img/Processor/i7-12700.webp"
+                    class="card-img-top img-fluid item-home-img"
+                    alt="intel 5 12th Gen box"
+                  />
+                </a>
+                <div class="card-body text-center">
+                  <div class="mb-3 fs-4">
+                    <strong>Intel i7-11700</strong>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="row text-center">
+                    <div class="col-8">
+                      <p><strong>₱11,990.00</strong></p>
+                    </div>
+                    <div class="col-4 mx-0 px-0">⭐4.8</div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="row">
+                    <div class="col-9">
+                      <a
+                        href="#"
+                        class="btn btn-primary bnow-cart-button d-flex justify-content-center"
+                        >Buy Now</a
+                      >
+                    </div>
+                    <div class="col-3 px-1">
+                      <a
+                        href="#"
+                        class="btn btn-primary bnow-cart-button d-flex justify-content-center"
+                        ><span class="material-symbols-outlined">
+                          add_shopping_cart
+                        </span></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ITEM 3 -->
+            <div class="col-lg-3">
+              <div class="card h-100">
+                <a href="#">
+                  <img
+                    src="img/Processor/i5-12600k.jpg"
+                    class="card-img-top img-fluid item-home-img"
+                    alt="intel 5 box"
+                  />
+                </a>
+                <div class="card-body text-center">
+                  <div class="mb-3 fs-4">
+                    <strong>Intel i5-12600KF</strong>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="row text-center">
+                    <div class="col-8">
+                      <p><strong>₱13,000.00</strong></p>
+                      <p style="color: gray; text-decoration: line-through">
+                        ₱14,000.00
+                      </p>
+                    </div>
+                    <div class="col-4 mx-0 px-0">⭐4.8</div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="row">
+                    <div class="col-9">
+                      <a
+                        href="#"
+                        class="btn btn-primary bnow-cart-button d-flex justify-content-center"
+                        >Buy Now</a
+                      >
+                    </div>
+                    <div class="col-3 px-1">
+                      <a
+                        href="#"
+                        class="btn btn-primary bnow-cart-button d-flex justify-content-center"
+                        ><span class="material-symbols-outlined">
+                          add_shopping_cart
+                        </span></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ITEM 4 -->
+            <div class="col-lg-3">
+              <div class="card h-100">
+                <a href="#">
+                  <img
+                    src="img/Processor/r5-7000.webp"
+                    class="card-img-top img-fluid item-home-img"
+                    alt="Ryzen 5 7600X Box"
+                  />
+                </a>
+                <div class="card-body text-center">
+                  <div class="mb-3 fs-4">
+                    <strong>Ryzen 5 7600X</strong>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="row text-center">
+                    <div class="col-8">
+                      <p><strong>₱13,990.00</strong></p>
+                    </div>
+                    <div class="col-4 mx-0 px-0">⭐4.8</div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="row">
+                    <div class="col-9">
+                      <a
+                        href="#"
+                        class="btn btn-primary bnow-cart-button d-flex justify-content-center"
+                        >Buy Now</a
+                      >
+                    </div>
+                    <div class="col-3 px-1">
+                      <a
+                        href="#"
+                        class="btn btn-primary bnow-cart-button d-flex justify-content-center"
+                        ><span class="material-symbols-outlined">
+                          add_shopping_cart
+                        </span></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="d-flex justify-content-between mt-4 mb-4">
+          <p class="ms-2 mb-2" style="color: gray">Showing 1-8 of 32 results</p>
+          <p class="me-2 mb-2">
+            <span class="mx-2"><strong>1</strong></span>
+            <span class="mx-2"><a href="#" class="bot-page-link">2</a></span>
+            <span class="mx-2"><a href="#" class="bot-page-link">3</a></span>
+            <span class="mx-2">...</span>
+            <span class="mx-2"><a href="#" class="bot-page-link">4</a></span>
+            <span class="mx-2"><a href="#" class="bot-page-link">➤</a></span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid" id="footer-container">
+      <br />
+      <br />
+      <div class="container" id="footer-container2">
+        <div class="row">
+          <div class="col-lg-3">
+            <p class="fs-5"><strong>CUSTOMER SERVICE</strong></p>
+            <p class="fs-6">
+              <a href="#" class="text-light footer_link">Cancellation Policy</a>
+            </p>
+            <p class="fs-6">
+              <a href="#" class="text-light footer_link">Delivery</a>
+            </p>
+            <p class="fs-6">
+              <a href="#" class="text-light footer_link">Order And Payments</a>
+            </p>
+            <p class="fs-6">
+              <a href="#" class="text-light footer_link">Privacy Policy</a>
+            </p>
+            <p class="fs-6">
+              <a href="#" class="text-light footer_link">Return and Refunds</a>
+            </p>
+            <p class="fs-6">
+              <a href="#" class="text-light footer_link"
+                >Service Area Directory</a
+              >
+            </p>
+            <p class="fs-6">
+              <a href="#" class="text-light footer_link"
+                >Terms and Conditions</a
+              >
+            </p>
+            <p class="fs-6">
+              <a href="#" class="text-light footer_link"
+                >Warranty Information</a
+              >
+            </p>
+            <p class="fs-6">
+              <a href="#" class="text-light footer_link">Warranty Policy</a>
+            </p>
+            <br />
+          </div>
+          <div class="col-lg-3">
+            <p class="fs-5"><strong>COMPANY</strong></p>
+            <p class="fs-6">
+              <a href="#" class="text-light footer_link">Careers</a>
+            </p>
+            <p class="fs-6">
+              <a href="#" class="text-light footer_link">Contact Us</a>
+            </p>
+            <p class="fs-6">
+              <a href="#" class="text-light footer_link">FAQs</a>
+            </p>
+            <p class="fs-6">
+              <a href="#" class="text-light footer_link">News and Articles</a>
+            </p>
+            <p class="fs-6">
+              <a href="#" class="text-light footer_link">Our Company</a>
+            </p>
+            <p class="fs-6">
+              <a href="#" class="text-light footer_link">Reviews</a>
+            </p>
+            <p class="fs-6">
+              <a href="#" class="text-light footer_link">Store Locations</a>
+            </p>
+            <br />
+          </div>
+          <div class="col-lg-3">
+            <p class="fs-5"><strong>LINKS</strong></p>
+            <p class="fs-6">
+              <a href="#" class="text-light footer_link"
+                >DanTechzone Community</a
+              >
+            </p>
+            <p class="fs-6">
+              <a href="#" class="text-light footer_link"
+                >Lazada Official Store</a
+              >
+            </p>
+            <p class="fs-6">
+              <a href="#" class="text-light footer_link"
+                >Shopee Official Store</a
+              >
+            </p>
+            <br />
+          </div>
+          <div class="col-lg-3 pb-5">
+            <p class="fs-5"><strong>Follow Us</strong></p>
+            <a href="#"
+              ><img
+                src="img/footer-logo/facebook-logo.png"
+                class="me-1 img-fluid footer_sm_logo"
+            /></a>
+            <a href="#"
+              ><img
+                src="img/footer-logo/instagram-logo.png"
+                class="me-1 img-fluid footer_sm_logo"
+            /></a>
+            <a href="#"
+              ><img
+                src="img/footer-logo/tiktok-logo.png"
+                class="me-1 img-fluid footer_sm_logo"
+            /></a>
+            <a href="#"
+              ><img
+                src="img/footer-logo/twitter-logo2.png"
+                class="me-1 img-fluid footer_sm_logo"
+            /></a>
+            <br />
+          </div>
+        </div>
+        <div class="row text-center mt-4">
+          <hr />
+          <p class="text-center my-4">© 2023 Dante Magbuhos Jr | djmagbuhos</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
